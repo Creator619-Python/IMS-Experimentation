@@ -1,0 +1,1935 @@
+[
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "10.1",
+    "title": "General (Improvement)",
+    "summary": "Organizations must identify opportunities for improvement and take actions to enhance QMS performance and customer satisfaction.",
+    "requirements": [
+      "Determine and select improvement opportunities across all QMS processes.",
+      "Implement actions that improve product quality, processes, customer satisfaction, and overall system effectiveness.",
+      "Use data analysis, audits, customer feedback, and performance results to drive improvements."
+    ],
+    "evidence_examples": [
+      "Improvement action logs",
+      "Kaizen or continual improvement records",
+      "Customer feedback reports",
+      "Analysis of trends and corrective actions"
+    ],
+    "auditor_questions": [
+      "How does your organization identify improvement opportunities?",
+      "Show evidence of actions taken to improve QMS performance.",
+      "How are improvement initiatives tracked?"
+    ],
+    "risks_if_not_compliant": [
+      "Stagnation or decline in quality performance",
+      "Increasing customer complaints"
+    ],
+    "responsibility": "Quality Manager / All Department Heads",
+    "related_clauses": {
+      "ISO_45001": [
+        "10.1 Improvement"
+      ],
+      "ISO_14001": [
+        "10.3 Continual Improvement"
+      ],
+      "ISO_22301": [
+        "10 Improvement Requirements"
+      ]
+    },
+    "checklist": [
+      "Are improvement opportunities identified?",
+      "Are improvements documented and tracked?",
+      "Is data used to identify improvement areas?"
+    ],
+    "templates": [
+      "Improvement Action Log",
+      "Continuous Improvement Form"
+    ],
+    "keywords": [
+      "improvement",
+      "opportunity",
+      "QMS enhancement"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "10.2",
+    "title": "Nonconformity and corrective action",
+    "summary": "Organizations must take action when nonconformities occur, prevent recurrence, and maintain records of corrective actions.",
+    "requirements": [
+      "React to nonconformities and control them.",
+      "Evaluate the cause of the nonconformity.",
+      "Implement corrective actions appropriate to the effects of the nonconformity.",
+      "Review effectiveness of corrective actions.",
+      "Update risks, opportunities, documents, and controls as needed.",
+      "Retain documented evidence of corrective actions."
+    ],
+    "evidence_examples": [
+      "Corrective Action Reports (CARs)",
+      "Root cause analysis forms (5 Why, Fishbone, etc.)",
+      "CAPA tracking logs",
+      "Verification and closure records"
+    ],
+    "auditor_questions": [
+      "Show a recent nonconformity and corrective action.",
+      "How do you analyze root causes?",
+      "How do you verify effectiveness of corrective actions?"
+    ],
+    "risks_if_not_compliant": [
+      "Recurring defects or process failures",
+      "Increased customer complaints or product returns"
+    ],
+    "responsibility": "Quality Manager / Process Owners",
+    "related_clauses": {
+      "ISO_22301": [
+        "10.1 Corrective Action"
+      ],
+      "ISO_45001": [
+        "10.2 Incident/Nonconformity"
+      ],
+      "ISO_27001": [
+        "Corrective Action Requirements"
+      ]
+    },
+    "checklist": [
+      "Is cause analysis performed?",
+      "Are corrective actions implemented and closed?",
+      "Is effectiveness verified?"
+    ],
+    "templates": [
+      "Corrective Action Report",
+      "Root Cause Analysis Template",
+      "CAR/CAPA Register"
+    ],
+    "keywords": [
+      "nonconformity",
+      "corrective action",
+      "root cause",
+      "CAPA"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "10.3",
+    "title": "Continual improvement",
+    "summary": "Organizations must continually improve the suitability, adequacy, and effectiveness of the QMS.",
+    "requirements": [
+      "Promote a culture of ongoing improvement across all levels.",
+      "Use outputs from audits, performance data, customer feedback, risks, opportunities, and management review for improvement.",
+      "Implement structured improvement initiatives with measurable outcomes.",
+      "Monitor improvement actions for effectiveness."
+    ],
+    "evidence_examples": [
+      "Kaizen or Lean improvement records",
+      "Trend analysis reports",
+      "Examples of implemented improvements",
+      "Management review improvement outputs"
+    ],
+    "auditor_questions": [
+      "Give examples of continual improvements implemented recently.",
+      "How do you evaluate effectiveness of improvement actions?",
+      "How does management promote continual improvement?"
+    ],
+    "risks_if_not_compliant": [
+      "QMS stagnation",
+      "Loss of competitive advantage"
+    ],
+    "responsibility": "Top Management / All Employees",
+    "related_clauses": {
+      "ISO_14001": [
+        "10.3"
+      ],
+      "ISO_45001": [
+        "10.3 Improvement Culture"
+      ],
+      "ISO_50001": [
+        "Energy Performance Improvement"
+      ]
+    },
+    "checklist": [
+      "Are improvement actions tracked?",
+      "Is data used to identify improvement opportunities?",
+      "Do employees participate in improvement?"
+    ],
+    "templates": [
+      "Continuous Improvement Register",
+      "Improvement Suggestion Form"
+    ],
+    "keywords": [
+      "continual improvement",
+      "culture",
+      "enhancement"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "9.1",
+    "title": "Monitoring, measurement, analysis and evaluation",
+    "summary": "Organizations must monitor, measure, analyze, and evaluate QMS performance, including customer satisfaction and process effectiveness.",
+    "requirements": [
+      "Identify what needs to be monitored and measured (KPIs, processes, products).",
+      "Define methods, frequency, responsibilities, and criteria for evaluation.",
+      "Collect and analyze data for QMS effectiveness and improvement.",
+      "Monitor customer satisfaction using appropriate methods.",
+      "Document and retain records of monitoring and measurement results."
+    ],
+    "evidence_examples": [
+      "KPI dashboards",
+      "Quality performance reports",
+      "Customer satisfaction survey results",
+      "Process monitoring logs"
+    ],
+    "auditor_questions": [
+      "What KPIs do you monitor for QMS performance?",
+      "How do you measure customer satisfaction?",
+      "Show records of data analysis and actions taken."
+    ],
+    "risks_if_not_compliant": [
+      "Poor visibility into QMS performance",
+      "Unidentified trends leading to quality failures"
+    ],
+    "responsibility": "Quality Manager / Process Owners",
+    "related_clauses": {
+      "ISO_14001": [
+        "9.1 Monitoring & Evaluation"
+      ],
+      "ISO_45001": [
+        "9.1 Performance Evaluation"
+      ]
+    },
+    "checklist": [
+      "Are KPIs defined and monitored?",
+      "Is customer satisfaction evaluated?",
+      "Are data analysis reports available?"
+    ],
+    "templates": [
+      "KPI Monitoring Sheet",
+      "Customer Satisfaction Survey Template"
+    ],
+    "keywords": [
+      "monitoring",
+      "measurement",
+      "KPIs",
+      "customer satisfaction"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "9.2",
+    "title": "Internal audit",
+    "summary": "Organizations must conduct internal audits at planned intervals to ensure the QMS conforms to ISO 9001 and internal requirements.",
+    "requirements": [
+      "Prepare an audit program considering process importance, results, and past issues.",
+      "Define audit criteria and scope.",
+      "Select competent auditors ensuring objectivity.",
+      "Report audit findings and take action on nonconformities.",
+      "Retain records of audit execution and follow-up."
+    ],
+    "evidence_examples": [
+      "Internal audit program",
+      "Audit plans and schedules",
+      "Audit reports and NCRs",
+      "Follow-up and closure records"
+    ],
+    "auditor_questions": [
+      "Show your audit schedule.",
+      "How do you ensure auditor independence?",
+      "Show evidence of corrective actions from audits."
+    ],
+    "risks_if_not_compliant": [
+      "Unidentified systemic issues",
+      "Ineffective QMS and incomplete compliance"
+    ],
+    "responsibility": "Internal Audit Team / Quality Manager",
+    "related_clauses": {
+      "ISO_27001": [
+        "Internal Audit Requirements"
+      ],
+      "ISO_22301": [
+        "Audit Program"
+      ]
+    },
+    "checklist": [
+      "Is an audit program available?",
+      "Are audits conducted as per plan?",
+      "Are findings addressed and closed?"
+    ],
+    "templates": [
+      "Internal Audit Checklist",
+      "Audit Report Template",
+      "Nonconformity Report Template"
+    ],
+    "keywords": [
+      "internal audit",
+      "audit program",
+      "NCR",
+      "audit findings"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "9.3",
+    "title": "Management review",
+    "summary": "Top management must review the QMS at planned intervals to ensure ongoing suitability, adequacy, and effectiveness.",
+    "requirements": [
+      "Plan management reviews at defined intervals.",
+      "Review QMS performance, customer satisfaction, audit results, risks, opportunities, objectives, and resources.",
+      "Document decisions and actions for improvement.",
+      "Ensure outputs include resource needs, improvement actions, and QMS changes."
+    ],
+    "evidence_examples": [
+      "Management review minutes",
+      "Action plans with owners and deadlines",
+      "Performance dashboards presented during review",
+      "Review agenda including required inputs"
+    ],
+    "auditor_questions": [
+      "When was the last management review conducted?",
+      "Show evidence of decisions and assigned actions.",
+      "How does management review contribute to QMS improvement?"
+    ],
+    "risks_if_not_compliant": [
+      "Lack of direction for the QMS",
+      "Missing critical improvement opportunities"
+    ],
+    "responsibility": "Top Management / Quality Manager",
+    "related_clauses": {
+      "ISO_50001": [
+        "Management Review"
+      ],
+      "ISO_14001": [
+        "Management Review"
+      ],
+      "ISO_45001": [
+        "Management Review"
+      ]
+    },
+    "checklist": [
+      "Is the review agenda complete?",
+      "Are inputs and outputs documented?",
+      "Are action items tracked to closure?"
+    ],
+    "templates": [
+      "Management Review Agenda Template",
+      "Management Review Minutes Template"
+    ],
+    "keywords": [
+      "management review",
+      "QMS performance",
+      "review inputs",
+      "review outputs"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "8.5",
+    "title": "Production and service provision",
+    "summary": "Organizations must carry out production and service activities under controlled conditions to ensure conformity.",
+    "requirements": [
+      "Provide documented procedures, work instructions, and reference materials as needed.",
+      "Use suitable equipment and maintain controlled environments.",
+      "Deploy competent personnel and validate special processes.",
+      "Implement identification and traceability where required.",
+      "Protect customer or supplier property.",
+      "Preserve products during internal processing and delivery."
+    ],
+    "evidence_examples": [
+      "Work instructions/SOPs",
+      "Process control sheets",
+      "Traceability logs or batch records",
+      "Preservation/packaging records"
+    ],
+    "auditor_questions": [
+      "How do you ensure production/service activities are controlled?",
+      "How do you maintain traceability?",
+      "Show records of preservation or handling of products."
+    ],
+    "risks_if_not_compliant": [
+      "Product defects",
+      "Loss of traceability and uncontrolled outputs"
+    ],
+    "responsibility": "Production Manager / Operations / Quality",
+    "related_clauses": {
+      "ISO_45001": [
+        "Operational Controls"
+      ],
+      "ISO_14001": [
+        "Operational Controls"
+      ],
+      "ISO_27001": [
+        "Process Validation for Secure Development"
+      ]
+    },
+    "checklist": [
+      "Are SOPs available and updated?",
+      "Are personnel competent?",
+      "Is traceability maintained where applicable?"
+    ],
+    "templates": [
+      "Work Instruction Template",
+      "Process Control Sheet",
+      "Product Preservation Log"
+    ],
+    "keywords": [
+      "production",
+      "service provision",
+      "traceability",
+      "preservation"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "8.6",
+    "title": "Release of products and services",
+    "summary": "Products and services must be verified and approved before release to the customer.",
+    "requirements": [
+      "Define acceptance criteria for product/service release.",
+      "Perform inspections, tests, or reviews before delivery.",
+      "Ensure authorized personnel approve release.",
+      "Maintain records of acceptance and release decisions."
+    ],
+    "evidence_examples": [
+      "Final inspection reports",
+      "Test certificates",
+      "Release approval signatures",
+      "Acceptance criteria documents"
+    ],
+    "auditor_questions": [
+      "How do you verify products/services before release?",
+      "Show your acceptance criteria.",
+      "Who authorizes release?"
+    ],
+    "risks_if_not_compliant": [
+      "Defective products reaching customers",
+      "Regulatory or safety violations"
+    ],
+    "responsibility": "Quality Assurance / Final Inspectors",
+    "related_clauses": {
+      "ISO_13485": [
+        "Product Release Requirements"
+      ],
+      "ISO_45001": [
+        "Control of Outputs That Affect Safety"
+      ]
+    },
+    "checklist": [
+      "Are acceptance criteria defined?",
+      "Are release records maintained?",
+      "Are only authorized personnel approving release?"
+    ],
+    "templates": [
+      "Final Inspection Report Template",
+      "Product Release Authorization Form"
+    ],
+    "keywords": [
+      "release",
+      "verification",
+      "acceptance",
+      "inspection"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "8.7",
+    "title": "Control of nonconforming outputs",
+    "summary": "Organizations must identify, control, and prevent unintended use or delivery of nonconforming products or services.",
+    "requirements": [
+      "Identify and segregate nonconforming outputs immediately.",
+      "Define actions such as rework, repair, concession, or scrap.",
+      "Obtain customer approval for concessions where needed.",
+      "Record details of nonconformities, actions taken, and authorization.",
+      "Prevent recurrence by analyzing trends and taking corrective action."
+    ],
+    "evidence_examples": [
+      "Nonconformity reports",
+      "Rework/repair records",
+      "Scrap approval forms",
+      "Segregation logs"
+    ],
+    "auditor_questions": [
+      "How do you identify and control nonconforming outputs?",
+      "Show records of rework or concessions.",
+      "How are nonconformities analyzed for recurrence?"
+    ],
+    "risks_if_not_compliant": [
+      "Defective products reaching customers",
+      "Financial loss due to rework or returns",
+      "Damage to reputation"
+    ],
+    "responsibility": "Quality Assurance / Operations",
+    "related_clauses": {
+      "ISO_22301": [
+        "Corrective Actions"
+      ],
+      "ISO_45001": [
+        "Incident and Nonconformity Control"
+      ]
+    },
+    "checklist": [
+      "Is nonconformity recorded?",
+      "Is segregation ensured?",
+      "Are concessions approved by customers when needed?"
+    ],
+    "templates": [
+      "Nonconformity Report (NCR) Template",
+      "Rework Instruction Form",
+      "Concession Request Form"
+    ],
+    "keywords": [
+      "nonconformity",
+      "rework",
+      "segregation",
+      "scrap"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "8.1",
+    "title": "Operational planning and control",
+    "summary": "Organizations must plan, implement, and control the processes needed to meet product/service requirements.",
+    "requirements": [
+      "Plan operations to meet quality requirements and customer expectations.",
+      "Control processes through defined criteria, instructions, and monitoring.",
+      "Manage outsourced processes to ensure conformity.",
+      "Maintain documented information showing operations are performed as planned."
+    ],
+    "evidence_examples": [
+      "Operational procedures and SOPs",
+      "Process control checklists",
+      "Production or service delivery logs",
+      "Outsourced process agreements"
+    ],
+    "auditor_questions": [
+      "How do you ensure operations are controlled?",
+      "Show the criteria for process acceptance.",
+      "How do you manage outsourced operations?"
+    ],
+    "risks_if_not_compliant": [
+      "Uncontrolled processes leading to defects",
+      "Failure to meet customer requirements"
+    ],
+    "responsibility": "Operations Manager / Quality Manager",
+    "related_clauses": {
+      "ISO_45001": [
+        "8.1 Operational Planning"
+      ],
+      "ISO_14001": [
+        "8.1 Operational Planning and Control"
+      ]
+    },
+    "checklist": [
+      "Are operational controls defined?",
+      "Are outsourced processes monitored?",
+      "Is documented evidence maintained?"
+    ],
+    "templates": [
+      "Operational Planning Checklist",
+      "Outsourced Process Control Form"
+    ],
+    "keywords": [
+      "operations",
+      "control",
+      "planning",
+      "process management"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "8.2",
+    "title": "Requirements for products and services",
+    "summary": "Organizations must ensure customer requirements for products and services are clearly understood and agreed before committing to supply.",
+    "requirements": [
+      "Define requirements specified by the customer and those not stated but necessary for intended use.",
+      "Confirm requirements before accepting orders.",
+      "Maintain records of contract/order reviews.",
+      "Ensure communication with customers regarding enquiries, changes, complaints, and feedback."
+    ],
+    "evidence_examples": [
+      "Order review forms",
+      "Contract documents",
+      "Customer communication logs",
+      "Records of requirement changes"
+    ],
+    "auditor_questions": [
+      "How do you review customer requirements?",
+      "Show evidence of contract/order confirmation.",
+      "How do you manage customer communication?"
+    ],
+    "risks_if_not_compliant": [
+      "Misunderstood customer needs",
+      "Customer dissatisfaction or disputes"
+    ],
+    "responsibility": "Sales / Customer Service / Quality",
+    "related_clauses": {
+      "ISO_27001": [
+        "Supplier & Customer Requirement Clarity"
+      ],
+      "ISO_22301": [
+        "Customer Communication Management"
+      ]
+    },
+    "checklist": [
+      "Are requirements reviewed?",
+      "Are requirements recorded and updated?",
+      "Are customer communications documented?"
+    ],
+    "templates": [
+      "Customer Requirement Review Form",
+      "Customer Communication Log"
+    ],
+    "keywords": [
+      "customer requirements",
+      "contracts",
+      "communications"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "8.3",
+    "title": "Design and development of products and services",
+    "summary": "Organizations must establish a structured design and development process when applicable.",
+    "requirements": [
+      "Plan design stages, responsibilities, and review checkpoints.",
+      "Define inputs including customer expectations, regulatory needs, and past data.",
+      "Ensure design outputs meet input requirements.",
+      "Conduct verification and validation.",
+      "Control design changes through review and approval."
+    ],
+    "evidence_examples": [
+      "Design and development plans",
+      "Design input/output documents",
+      "Verification and validation reports",
+      "Design change records"
+    ],
+    "auditor_questions": [
+      "How do you plan your design stages?",
+      "Show evidence of design verification.",
+      "How are design changes controlled?"
+    ],
+    "risks_if_not_compliant": [
+      "Product failures due to incomplete design",
+      "Regulatory nonconformance"
+    ],
+    "responsibility": "Design Engineering / R&D / QA",
+    "related_clauses": {
+      "ISO_27001": [
+        "Secure Development Requirements"
+      ],
+      "ISO_13485": [
+        "Medical Device Design Controls"
+      ]
+    },
+    "checklist": [
+      "Are design stages defined?",
+      "Are inputs complete and approved?",
+      "Is design validated before release?"
+    ],
+    "templates": [
+      "Design Plan Template",
+      "Design Input-Output Matrix",
+      "Design Change Request Form"
+    ],
+    "keywords": [
+      "design",
+      "development",
+      "verification",
+      "validation"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "8.4",
+    "title": "Control of externally provided processes, products and services",
+    "summary": "Organizations must ensure suppliers and outsourced processes meet defined requirements.",
+    "requirements": [
+      "Evaluate and select suppliers based on ability to meet requirements.",
+      "Define criteria for supplier approval and ongoing monitoring.",
+      "Communicate requirements clearly to suppliers.",
+      "Inspect or verify externally provided products/services.",
+      "Maintain control over outsourced processes."
+    ],
+    "evidence_examples": [
+      "Approved supplier list",
+      "Supplier evaluation forms",
+      "Purchase orders with specifications",
+      "Incoming inspection reports"
+    ],
+    "auditor_questions": [
+      "How do you select and evaluate suppliers?",
+      "Show supplier performance monitoring records.",
+      "How do you ensure outsourced processes remain controlled?"
+    ],
+    "risks_if_not_compliant": [
+      "Defective purchased materials affecting quality",
+      "Outsourced failures impacting customers"
+    ],
+    "responsibility": "Procurement / Quality Manager",
+    "related_clauses": {
+      "ISO_27001": [
+        "Supplier Security Management"
+      ],
+      "ISO_45001": [
+        "Contractor Control"
+      ],
+      "ISO_14001": [
+        "Supplier & Outsourcing Control"
+      ]
+    },
+    "checklist": [
+      "Are suppliers evaluated before approval?",
+      "Are supplier requirements documented?",
+      "Are outsourced processes monitored?"
+    ],
+    "templates": [
+      "Supplier Evaluation Form",
+      "Approved Supplier List",
+      "Incoming Inspection Checklist"
+    ],
+    "keywords": [
+      "suppliers",
+      "outsourcing",
+      "procurement",
+      "vendor management"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-19",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.3",
+    "title": "Awareness",
+    "summary": "Employees must be aware of the quality policy, quality objectives, their roles, and the impact of not conforming to QMS requirements.",
+    "requirements": [
+      "Ensure staff understand the quality policy and their role in achieving objectives.",
+      "Communicate the importance of conforming to QMS requirements.",
+      "Ensure employees are aware of how their work affects product/service quality."
+    ],
+    "evidence_examples": [
+      "Induction training records",
+      "Posters showing policy and objectives",
+      "Awareness session attendance sheets"
+    ],
+    "auditor_questions": [
+      "How do employees learn about their impact on quality?",
+      "How do you ensure awareness of the quality policy?",
+      "Show evidence of awareness training."
+    ],
+    "risks_if_not_compliant": [
+      "Employee mistakes due to lack of understanding",
+      "Reduced engagement with QMS requirements"
+    ],
+    "responsibility": "HR / Department Heads / Quality Manager",
+    "related_clauses": {
+      "ISO_45001": [
+        "Awareness Requirements"
+      ],
+      "ISO_14001": [
+        "Employee Awareness"
+      ]
+    },
+    "checklist": [
+      "Do employees know the quality policy?",
+      "Are awareness sessions conducted?",
+      "Are awareness records maintained?"
+    ],
+    "templates": [
+      "Awareness Training Record",
+      "Awareness Checklist"
+    ],
+    "keywords": [
+      "awareness",
+      "policy communication",
+      "roles"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.4",
+    "title": "Communication",
+    "summary": "Organizations must establish internal and external communication processes relevant to the QMS.",
+    "requirements": [
+      "Determine what needs to be communicated, when, and to whom.",
+      "Define communication methods (meetings, emails, reports, notices).",
+      "Ensure communication is clear, timely, and appropriate.",
+      "Document communication responsibilities where needed."
+    ],
+    "evidence_examples": [
+      "Communication plan",
+      "Meeting schedules and minutes",
+      "Customer communication logs"
+    ],
+    "auditor_questions": [
+      "How do you communicate quality-related information?",
+      "Show evidence of internal QMS communication.",
+      "How do you communicate with customers and suppliers?"
+    ],
+    "risks_if_not_compliant": [
+      "Misunderstood requirements",
+      "Delayed or incorrect decisions"
+    ],
+    "responsibility": "Quality Manager / Department Heads",
+    "related_clauses": {
+      "ISO_22301": [
+        "Communication Requirements"
+      ],
+      "ISO_27001": [
+        "A.7.4 Communication"
+      ]
+    },
+    "checklist": [
+      "Is there a QMS communication process?",
+      "Are communication channels defined?",
+      "Is communication documented where needed?"
+    ],
+    "templates": [
+      "Communication Plan Template",
+      "Internal Communication Log"
+    ],
+    "keywords": [
+      "communication",
+      "internal communication",
+      "external communication"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.5",
+    "title": "Documented information",
+    "summary": "QMS documents and records must be controlled to ensure availability, proper use, and protection from loss or unauthorized changes.",
+    "requirements": [
+      "Maintain documented information required by the QMS and ISO 9001.",
+      "Control creation, approval, updating, and storage of documents.",
+      "Ensure records are protected from loss, tampering, and unauthorized access.",
+      "Ensure documents are available where needed and obsolete versions are removed."
+    ],
+    "evidence_examples": [
+      "Document control procedure",
+      "Master document list",
+      "Records retention schedule",
+      "Controlled forms with version numbers"
+    ],
+    "auditor_questions": [
+      "Show how you control QMS documents.",
+      "How do you manage obsolete documents?",
+      "Where is documented information stored and protected?"
+    ],
+    "risks_if_not_compliant": [
+      "Use of outdated or incorrect documents",
+      "Loss of critical QMS records"
+    ],
+    "responsibility": "Document Controller / Quality Manager",
+    "related_clauses": {
+      "ISO_27001": [
+        "Document Control – Security"
+      ],
+      "ISO_14001": [
+        "Documented Information Requirements"
+      ]
+    },
+    "checklist": [
+      "Is there a document control procedure?",
+      "Are documents version-controlled?",
+      "Are records stored and protected?"
+    ],
+    "templates": [
+      "Master Document List Template",
+      "Document Control Procedure Template",
+      "Record Retention Schedule"
+    ],
+    "keywords": [
+      "documents",
+      "records",
+      "document control",
+      "version control"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.1.1",
+    "title": "General (Resources)",
+    "summary": "The organization must identify and provide all resources needed for the QMS to function effectively.",
+    "requirements": [
+      "Determine resource needs for processes, people, equipment, environment, and technology.",
+      "Ensure resources are adequate, available, and maintained.",
+      "Plan resources during organizational or process changes."
+    ],
+    "evidence_examples": [
+      "Resource requirement plan",
+      "Annual budget allocation",
+      "Records showing resource review"
+    ],
+    "auditor_questions": [
+      "How do you determine resource needs?",
+      "Are resources reassessed during changes?",
+      "Show evidence of resource adequacy."
+    ],
+    "risks_if_not_compliant": [
+      "Process failures due to insufficient resources",
+      "Reduced product/service quality"
+    ],
+    "responsibility": "Top Management / Operations Head",
+    "related_clauses": {
+      "ISO_45001": [
+        "7.1"
+      ],
+      "ISO_14001": [
+        "7.1"
+      ]
+    },
+    "checklist": [
+      "Are resource needs documented?",
+      "Are periodic reviews conducted?",
+      "Is resource adequacy evaluated?"
+    ],
+    "templates": [
+      "Resource Planning Template"
+    ],
+    "keywords": [
+      "resources",
+      "planning",
+      "adequacy"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.1.2",
+    "title": "People",
+    "summary": "The organization must ensure enough competent personnel are available to run QMS processes effectively.",
+    "requirements": [
+      "Determine required personnel and competencies for each process.",
+      "Ensure adequate staffing in all operational areas.",
+      "Verify that staff are competent or trained to become competent."
+    ],
+    "evidence_examples": [
+      "Staffing plan",
+      "Competency matrix",
+      "Appointment letters for process owners"
+    ],
+    "auditor_questions": [
+      "How do you determine if you have enough staff?",
+      "Show the competency requirements for key roles.",
+      "How do you address competency gaps?"
+    ],
+    "risks_if_not_compliant": [
+      "Process delays or failures due to manpower shortage",
+      "Incorrect or inconsistent outputs from untrained staff"
+    ],
+    "responsibility": "HR / Department Heads",
+    "related_clauses": {
+      "ISO_45001": [
+        "7.2"
+      ],
+      "ISO_14001": [
+        "7.2"
+      ]
+    },
+    "checklist": [
+      "Is competency matrix updated?",
+      "Are staffing levels adequate?",
+      "Is manpower reviewed periodically?"
+    ],
+    "templates": [
+      "Competency Matrix Template"
+    ],
+    "keywords": [
+      "people",
+      "staff",
+      "competence"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.1.3",
+    "title": "Infrastructure",
+    "summary": "Provide and maintain infrastructure required for processes including buildings, equipment, utilities, and IT systems.",
+    "requirements": [
+      "Identify infrastructure needs for all QMS processes.",
+      "Ensure equipment, buildings, and utilities are maintained.",
+      "Plan upgrades or replacements before failures occur."
+    ],
+    "evidence_examples": [
+      "Maintenance logs",
+      "Calibration/repair records",
+      "Infrastructure planning documents"
+    ],
+    "auditor_questions": [
+      "What infrastructure is critical to product quality?",
+      "Show maintenance records for key equipment.",
+      "How do you ensure uninterrupted utilities?"
+    ],
+    "risks_if_not_compliant": [
+      "Breakdowns causing production/service delays",
+      "Quality issues from poorly maintained equipment"
+    ],
+    "responsibility": "Engineering / Facilities Team",
+    "related_clauses": {
+      "ISO_50001": [
+        "7.1"
+      ],
+      "ISO_22301": [
+        "7.1 Infrastructure Needs"
+      ]
+    },
+    "checklist": [
+      "Is critical equipment identified?",
+      "Are maintenance schedules followed?",
+      "Is there a backup plan for critical utilities?"
+    ],
+    "templates": [
+      "Asset Maintenance Register"
+    ],
+    "keywords": [
+      "infrastructure",
+      "maintenance",
+      "equipment"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.1.4",
+    "title": "Environment for the operation of processes",
+    "summary": "Provide a suitable environment (physical, social, psychological) to ensure process performance and product quality.",
+    "requirements": [
+      "Identify environmental conditions that affect product/service quality.",
+      "Control temperature, humidity, lighting, noise, cleanliness, and safety.",
+      "Maintain a positive working environment including human behavior factors."
+    ],
+    "evidence_examples": [
+      "Temperature/humidity monitoring logs",
+      "Housekeeping checklists",
+      "Safety inspection records"
+    ],
+    "auditor_questions": [
+      "What environmental conditions affect product quality?",
+      "Show monitoring records for controlled environments.",
+      "How do you ensure a safe and hygienic workspace?"
+    ],
+    "risks_if_not_compliant": [
+      "Contamination, defects, or process instability",
+      "Reduced employee performance"
+    ],
+    "responsibility": "Facilities / QA / HR",
+    "related_clauses": {
+      "ISO_45001": [
+        "Workplace Conditions"
+      ],
+      "ISO_14001": [
+        "Operational Control"
+      ]
+    },
+    "checklist": [
+      "Are environment parameters defined?",
+      "Are controls adequate?",
+      "Is environment monitored and recorded?"
+    ],
+    "templates": [
+      "Environment Monitoring Log"
+    ],
+    "keywords": [
+      "environment",
+      "workspace",
+      "conditions"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.1.5",
+    "title": "Monitoring and measuring resources",
+    "summary": "Ensure that equipment used to monitor or measure quality is suitable, calibrated, and maintained.",
+    "requirements": [
+      "Identify equipment affecting measurement accuracy.",
+      "Calibrate equipment at defined intervals.",
+      "Maintain calibration/verification records.",
+      "Take action when equipment is found out of calibration."
+    ],
+    "evidence_examples": [
+      "Calibration certificates",
+      "Equipment verification logs",
+      "Equipment identification tags"
+    ],
+    "auditor_questions": [
+      "Which instruments are used for quality measurement?",
+      "Show calibration records.",
+      "What happens when equipment fails calibration?"
+    ],
+    "risks_if_not_compliant": [
+      "Incorrect measurement results",
+      "Release of defective products"
+    ],
+    "responsibility": "Quality Control / Calibration Team",
+    "related_clauses": {
+      "ISO_17025": [
+        "Measurement Validity"
+      ],
+      "ISO_50001": [
+        "Monitoring instruments"
+      ]
+    },
+    "checklist": [
+      "Is equipment list maintained?",
+      "Are calibration intervals defined?",
+      "Are out-of-tolerance actions recorded?"
+    ],
+    "templates": [
+      "Calibration Register Template"
+    ],
+    "keywords": [
+      "calibration",
+      "measurement",
+      "equipment"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.1.6",
+    "title": "Organizational knowledge",
+    "summary": "Maintain and make available the knowledge needed to operate processes and deliver conforming products/services.",
+    "requirements": [
+      "Identify critical knowledge areas (process, technical, experiential).",
+      "Capture and document knowledge when employees leave or processes change.",
+      "Ensure knowledge is available to relevant personnel.",
+      "Promote continuous learning and update knowledge repositories."
+    ],
+    "evidence_examples": [
+      "Knowledge repository or manuals",
+      "Lessons learned documents",
+      "Training materials"
+    ],
+    "auditor_questions": [
+      "How do you identify essential organizational knowledge?",
+      "Where is knowledge stored?",
+      "How do you prevent knowledge loss?"
+    ],
+    "risks_if_not_compliant": [
+      "Loss of key knowledge due to staff attrition",
+      "Operational inconsistency"
+    ],
+    "responsibility": "Quality Manager / HR",
+    "related_clauses": {
+      "ISO_27001": [
+        "A.7.2 Knowledge Transfer"
+      ],
+      "ISO_22301": [
+        "Learning from Disruptions"
+      ]
+    },
+    "checklist": [
+      "Is critical knowledge documented?",
+      "Is knowledge updated?",
+      "Is access given to relevant staff?"
+    ],
+    "templates": [
+      "Knowledge Management Log"
+    ],
+    "keywords": [
+      "knowledge",
+      "learning",
+      "documentation"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.2",
+    "title": "Competence",
+    "summary": "Personnel performing work affecting quality must be competent based on education, training, or experience.",
+    "requirements": [
+      "Identify competency requirements for each role.",
+      "Assess employees against these criteria.",
+      "Provide training or mentoring where gaps exist.",
+      "Maintain records of training and competency evaluations."
+    ],
+    "evidence_examples": [
+      "Training records",
+      "Competency evaluation forms",
+      "Certificates of qualification"
+    ],
+    "auditor_questions": [
+      "How do you determine competency needs?",
+      "Show training records for key operators.",
+      "How are competency gaps addressed?"
+    ],
+    "risks_if_not_compliant": [
+      "Process errors due to untrained personnel",
+      "Safety and quality incidents"
+    ],
+    "responsibility": "HR / Quality Manager / Department Heads",
+    "related_clauses": {
+      "ISO_45001": [
+        "Competency Requirements"
+      ],
+      "ISO_14001": [
+        "Competence and Awareness"
+      ]
+    },
+    "checklist": [
+      "Are competency criteria defined?",
+      "Is competency evaluated periodically?",
+      "Is training tracked?"
+    ],
+    "templates": [
+      "Competency Evaluation Form"
+    ],
+    "keywords": [
+      "competence",
+      "training",
+      "qualification"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "6.2",
+    "title": "Quality objectives and planning to achieve them",
+    "summary": "Organizations must establish measurable quality objectives and plan how to achieve them.",
+    "requirements": [
+      "Define measurable quality objectives aligned to the quality policy.",
+      "Ensure objectives are relevant to product/service conformity and customer satisfaction.",
+      "Plan actions, responsible persons, timelines, and resources required to meet each objective.",
+      "Review progress periodically and update as needed."
+    ],
+    "evidence_examples": [
+      "Quality objectives register",
+      "KPI dashboards showing target vs actual",
+      "Meeting minutes showing review of objectives"
+    ],
+    "auditor_questions": [
+      "What are your current quality objectives?",
+      "How are objectives measured and monitored?",
+      "Show evidence of progress review."
+    ],
+    "risks_if_not_compliant": [
+      "Lack of direction for quality improvements",
+      "Objectives not aligned with strategic priorities"
+    ],
+    "responsibility": "Quality Manager / Process Owners",
+    "related_clauses": {
+      "ISO_14001": [
+        "6.2 Environmental Objectives"
+      ],
+      "ISO_45001": [
+        "6.2 OH&S Objectives"
+      ]
+    },
+    "checklist": [
+      "Are objectives measurable?",
+      "Are actions defined?",
+      "Are KPIs monitored routinely?"
+    ],
+    "templates": [
+      "Quality Objectives Register Template",
+      "Objective Action Plan Template"
+    ],
+    "keywords": [
+      "objectives",
+      "KPIs",
+      "targets",
+      "improvement"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "6.3",
+    "title": "Planning for changes",
+    "summary": "Changes to the QMS must be planned in a controlled manner to ensure integrity and continued performance.",
+    "requirements": [
+      "Identify changes that impact the QMS (process, equipment, staff, systems).",
+      "Assess potential consequences and risks before implementing changes.",
+      "Assign responsibilities, resources, and timelines for changes.",
+      "Ensure QMS continues to function effectively during and after the change."
+    ],
+    "evidence_examples": [
+      "Change request forms",
+      "Impact assessment logs",
+      "Records of approvals for process or technology changes"
+    ],
+    "auditor_questions": [
+      "How do you evaluate risks before implementing changes?",
+      "Show an example of a planned change and approval document.",
+      "How do you ensure QMS integrity during changes?"
+    ],
+    "risks_if_not_compliant": [
+      "Uncontrolled changes leading to quality failures",
+      "Process disruptions and inconsistent outputs"
+    ],
+    "responsibility": "Quality Manager / Department Heads",
+    "related_clauses": {
+      "ISO_45001": [
+        "8.1.3 Management of Change"
+      ],
+      "ISO_27001": [
+        "A.5.32 Change Management"
+      ]
+    },
+    "checklist": [
+      "Is impact assessed before change?",
+      "Are changes documented and approved?",
+      "Are risks monitored post-change?"
+    ],
+    "templates": [
+      "Management of Change (MoC) Template",
+      "Change Impact Assessment Form"
+    ],
+    "keywords": [
+      "change management",
+      "planning",
+      "impact",
+      "risk"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "7.1",
+    "title": "Resources",
+    "summary": "The organization must determine and provide resources needed to establish, implement, maintain, and improve the QMS.",
+    "requirements": [
+      "Determine resource needs including personnel, infrastructure, and environment.",
+      "Provide adequate training, tools, and monitoring equipment.",
+      "Ensure resources are maintained and evaluated for suitability.",
+      "Plan resources during new projects, changes, or expansions."
+    ],
+    "evidence_examples": [
+      "Resource requirement plan",
+      "Equipment maintenance logs",
+      "Budget allocation for QMS improvements",
+      "Training records"
+    ],
+    "auditor_questions": [
+      "How are resource needs identified?",
+      "Show evidence of resource adequacy (staff, equipment, tools).",
+      "How is monitoring/measuring equipment maintained?"
+    ],
+    "risks_if_not_compliant": [
+      "Insufficient resources causing process errors",
+      "Poor product quality due to inadequate equipment"
+    ],
+    "responsibility": "Top Management / Department Heads",
+    "related_clauses": {
+      "ISO_14001": [
+        "7.1"
+      ],
+      "ISO_45001": [
+        "7.1"
+      ],
+      "ISO_22301": [
+        "7.1"
+      ]
+    },
+    "checklist": [
+      "Are resources identified and documented?",
+      "Is equipment maintained?",
+      "Are competencies assessed and supported?"
+    ],
+    "templates": [
+      "Resource Planning Template",
+      "Equipment Maintenance Record"
+    ],
+    "keywords": [
+      "resources",
+      "infrastructure",
+      "environment",
+      "equipment"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "5.2",
+    "title": "Quality policy",
+    "summary": "Top management must establish, maintain, and communicate a quality policy aligned with the organization’s purpose and commitment to meeting requirements.",
+    "requirements": [
+      "Document a quality policy that supports the organization’s direction.",
+      "Ensure the policy includes commitment to meeting requirements and improving the QMS.",
+      "Communicate the policy to all staff and make it available to relevant interested parties.",
+      "Review the policy periodically for ongoing relevance."
+    ],
+    "evidence_examples": [
+      "Approved quality policy signed by top management",
+      "Email or poster communication of the policy",
+      "Minutes showing periodic review of the policy"
+    ],
+    "auditor_questions": [
+      "Where is your quality policy documented?",
+      "How is the policy communicated to staff?",
+      "How does the policy support strategic direction?"
+    ],
+    "risks_if_not_compliant": [
+      "Employees unaware of quality direction",
+      "Misalignment between operations and quality goals"
+    ],
+    "responsibility": "Top Management",
+    "related_clauses": {
+      "ISO_14001": [
+        "5.2 Environmental Policy"
+      ],
+      "ISO_45001": [
+        "5.2 OH&S Policy"
+      ]
+    },
+    "checklist": [
+      "Is policy documented and approved?",
+      "Does it include commitment to improvement?",
+      "Is it communicated to employees?"
+    ],
+    "templates": [
+      "Quality Policy Template",
+      "Policy Communication Record"
+    ],
+    "keywords": [
+      "quality policy",
+      "commitment",
+      "direction",
+      "communication"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "5.3",
+    "title": "Organizational roles, responsibilities and authorities",
+    "summary": "Top management must assign and communicate roles and responsibilities to ensure the QMS is effective.",
+    "requirements": [
+      "Define roles and responsibilities related to QMS performance.",
+      "Communicate responsibilities to relevant personnel.",
+      "Ensure process owners have authority to carry out duties.",
+      "Document responsibilities in job descriptions or matrices."
+    ],
+    "evidence_examples": [
+      "Responsibility and authority matrix",
+      "Job descriptions referencing QMS responsibilities",
+      "Organizational chart with roles"
+    ],
+    "auditor_questions": [
+      "Who is responsible for QMS implementation?",
+      "Show how responsibilities are communicated.",
+      "How is accountability ensured?"
+    ],
+    "risks_if_not_compliant": [
+      "Confusion over authorities",
+      "Lack of accountability for QMS performance"
+    ],
+    "responsibility": "Top Management / HR",
+    "related_clauses": {
+      "ISO_45001": [
+        "5.3"
+      ],
+      "ISO_14001": [
+        "5.3"
+      ]
+    },
+    "checklist": [
+      "Are responsibilities documented?",
+      "Do employees know their QMS roles?",
+      "Is a responsibility matrix maintained?"
+    ],
+    "templates": [
+      "Responsibility Matrix Template",
+      "QMS Role Assignment Document"
+    ],
+    "keywords": [
+      "roles",
+      "responsibility",
+      "authority",
+      "QMS"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "6.1",
+    "title": "Actions to address risks and opportunities",
+    "summary": "Organizations must identify risks and opportunities that impact QMS performance and plan actions accordingly.",
+    "requirements": [
+      "Determine risks and opportunities related to QMS results and customer satisfaction.",
+      "Plan actions to address risks and enhance opportunities.",
+      "Integrate actions into operational processes and evaluate effectiveness.",
+      "Regularly review risks and update controls."
+    ],
+    "evidence_examples": [
+      "Risk register with scoring and mitigation actions",
+      "Opportunity enhancement plans",
+      "Management review notes showing risk discussion"
+    ],
+    "auditor_questions": [
+      "How do you identify and assess QMS risks?",
+      "Show your risk register.",
+      "How are actions tracked and verified?"
+    ],
+    "risks_if_not_compliant": [
+      "Unexpected failures in quality processes",
+      "Missed improvement opportunities"
+    ],
+    "responsibility": "Quality Manager / Process Owners",
+    "related_clauses": {
+      "ISO 31000": [
+        "4.1",
+        "6.2"
+      ],
+      "ISO 22301": [
+        "6.1.2"
+      ],
+      "ISO 45001": [
+        "6.1"
+      ]
+    },
+    "checklist": [
+      "Is there a risk register?",
+      "Are actions assigned and tracked?",
+      "Are risks reviewed periodically?"
+    ],
+    "templates": [
+      "Risk Register Template",
+      "Opportunity Log Template"
+    ],
+    "keywords": [
+      "risk",
+      "opportunity",
+      "mitigation",
+      "QMS improvement"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "4.1",
+    "title": "Understanding the organization and its context",
+    "source_note": "From Merged_ISO_Clauses.json",
+    "summary": "Identify internal and external factors that affect the Quality Management System.",
+    "requirements": [
+      "Determine internal issues that affect quality performance.",
+      "Identify external issues including regulatory, social, technological, and market factors.",
+      "Review the context periodically and update when changes occur."
+    ],
+    "evidence_examples": [
+      "Context analysis document",
+      "SWOT/PESTLE analysis reports",
+      "Meeting minutes showing context review"
+    ],
+    "auditor_questions": [
+      "How do you identify internal and external issues?",
+      "Show your latest context analysis.",
+      "How often is the context reviewed?"
+    ],
+    "risks_if_not_compliant": [
+      "Unmanaged risks affecting product/service quality",
+      "Misalignment between operations and customer expectations"
+    ],
+    "responsibility": "Quality Manager / Senior Leadership",
+    "related_clauses": {
+      "ISO_14001": [
+        "4.1"
+      ],
+      "ISO_45001": [
+        "4.1"
+      ],
+      "ISO_27001": [
+        "4.1"
+      ]
+    },
+    "checklist": [
+      "Are internal/external issues identified?",
+      "Is the context updated regularly?",
+      "Is the context linked to risk assessment?"
+    ],
+    "templates": [
+      "Context Analysis Template",
+      "PESTLE Template"
+    ],
+    "keywords": [
+      "context",
+      "internal issues",
+      "external issues",
+      "quality"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "4.2",
+    "title": "Understanding the needs and expectations of interested parties",
+    "source_note": "From merged ISO 9001 clause list",
+    "summary": "Identify stakeholders relevant to the QMS and understand their requirements.",
+    "requirements": [
+      "List all interested parties impacting product/service quality.",
+      "Document their needs, expectations, and compliance obligations.",
+      "Review and update when stakeholder requirements change."
+    ],
+    "evidence_examples": [
+      "Stakeholder register",
+      "Customer requirement list",
+      "Regulatory compliance matrix"
+    ],
+    "auditor_questions": [
+      "Who are your key stakeholders?",
+      "Show how their requirements are included in QMS controls.",
+      "How do you track changes in stakeholder expectations?"
+    ],
+    "risks_if_not_compliant": [
+      "Customer dissatisfaction",
+      "Regulatory non-compliance"
+    ],
+    "responsibility": "Quality Manager / Compliance Team",
+    "related_clauses": {
+      "ISO_27001": [
+        "4.2"
+      ],
+      "ISO_22301": [
+        "4.2"
+      ]
+    },
+    "checklist": [
+      "Is there a stakeholder list?",
+      "Are requirements mapped to QMS controls?",
+      "Are regulatory requirements updated?"
+    ],
+    "templates": [
+      "Stakeholder Register Template"
+    ],
+    "keywords": [
+      "stakeholder",
+      "requirements",
+      "customers"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "4.3",
+    "title": "Determining the scope of the QMS",
+    "source_note": "Based on Merged_ISO_Clauses.json",
+    "summary": "Define the boundaries and applicability of the Quality Management System.",
+    "requirements": [
+      "Document the QMS scope, including products, services, and sites.",
+      "State exclusions with justification.",
+      "Ensure scope aligns with internal/external issues and stakeholder expectations."
+    ],
+    "evidence_examples": [
+      "QMS Scope statement",
+      "Organizational boundary map",
+      "Process interaction map"
+    ],
+    "auditor_questions": [
+      "Where is the QMS scope documented?",
+      "What exclusions exist and why?",
+      "How did you decide the scope boundaries?"
+    ],
+    "risks_if_not_compliant": [
+      "Incomplete coverage of quality processes",
+      "Audit findings due to unjustified exclusions"
+    ],
+    "responsibility": "Top Management / Quality Manager",
+    "related_clauses": {
+      "ISO_22301": [
+        "4.3"
+      ],
+      "ISO_27001": [
+        "4.3"
+      ]
+    },
+    "checklist": [
+      "Is scope documented?",
+      "Are exclusions justified?",
+      "Is scope aligned with context and stakeholders?"
+    ],
+    "templates": [
+      "QMS Scope Template"
+    ],
+    "keywords": [
+      "scope",
+      "boundaries",
+      "exclusions"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "4.4",
+    "title": "Quality Management System and its processes",
+    "source_note": "From merged ISO 9001 clauses",
+    "summary": "Define, implement, maintain, and improve processes needed for the QMS.",
+    "requirements": [
+      "Identify QMS processes, inputs, outputs, criteria, and interactions.",
+      "Assign process owners and performance indicators.",
+      "Implement monitoring, measurement, and continual improvement."
+    ],
+    "evidence_examples": [
+      "Process interaction map",
+      "SIPOC diagrams",
+      "KPIs for each process"
+    ],
+    "auditor_questions": [
+      "Show your process map.",
+      "How do you monitor process performance?",
+      "Who owns each QMS process?"
+    ],
+    "risks_if_not_compliant": [
+      "Process failures leading to inconsistent output",
+      "Lack of clarity on responsibilities"
+    ],
+    "responsibility": "Process Owners / Quality Manager",
+    "related_clauses": {
+      "ISO_14001": [
+        "4.4"
+      ],
+      "ISO_45001": [
+        "4.4"
+      ]
+    },
+    "checklist": [
+      "Are processes defined?",
+      "Are interactions mapped?",
+      "Are process KPIs monitored?"
+    ],
+    "templates": [
+      "Process Map Template",
+      "SIPOC Template"
+    ],
+    "keywords": [
+      "process",
+      "interaction",
+      "KPIs"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  },
+  {
+    "standard": "ISO 9001:2015",
+    "clause": "5.1",
+    "title": "Leadership and commitment",
+    "source_note": "From merged ISO 9001 clauses",
+    "summary": "Top management must demonstrate leadership and commitment to the QMS.",
+    "requirements": [
+      "Ensure QMS effectiveness and integration into operations.",
+      "Communicate quality importance and support process owners.",
+      "Promote customer focus and continual improvement."
+    ],
+    "evidence_examples": [
+      "Management review minutes",
+      "Signed quality policy",
+      "Records of resource allocation"
+    ],
+    "auditor_questions": [
+      "How does top management show leadership?",
+      "Provide evidence of resource support.",
+      "How is customer focus demonstrated?"
+    ],
+    "risks_if_not_compliant": [
+      "Weak QMS performance",
+      "Lack of accountability"
+    ],
+    "responsibility": "Top Management",
+    "related_clauses": {
+      "ISO_14001": [
+        "5.1"
+      ],
+      "ISO_45001": [
+        "5.1"
+      ]
+    },
+    "checklist": [
+      "Is leadership visible?",
+      "Are resources provided?",
+      "Is policy communicated?"
+    ],
+    "templates": [
+      "Leadership Commitment Checklist",
+      "Responsibility Matrix"
+    ],
+    "keywords": [
+      "leadership",
+      "commitment",
+      "customer focus"
+    ],
+    "status": "draft",
+    "metadata": {
+      "last_updated": "2025-11-18",
+      "created_by": "Gokul",
+      "version": "0.1"
+    }
+  }
+]

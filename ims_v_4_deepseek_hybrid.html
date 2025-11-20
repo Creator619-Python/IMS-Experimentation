@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IMS V4 — Deepseek Hybrid (Quick Audit + Detailed + NC/CAPA)</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{--bg:#041025;--panel:#071526;--muted:#9aa6b2;--accent:#00c2ff;--card:#072233;--glass:rgba(255,255,255,0.03);--glass-2:rgba(255,255,255,0.02)}
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#031021 0%,#06162a 100%);color:#e6eef6}
+    .app{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+    aside.sidebar{background:linear-gradient(180deg,rgba(2,10,20,0.95),rgba(4,12,22,0.98));padding:18px;border-right:1px solid rgba(255,255,255,0.03)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#02273a,#004e6b);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h3{margin:0;font-size:16px}
+    .muted{color:var(--muted);font-size:13px}
+    .nav{margin-top:18px;display:flex;flex-direction:column;gap:8px}
+    .nav button{background:transparent;border:0;color:inherit;padding:10px 12px;border-radius:8px;text-align:left;cursor:pointer;font-size:14px}
+    .nav button.active{background:linear-gradient(90deg,rgba(0,194,255,0.12),rgba(0,140,220,0.06));box-shadow:0 6px 18px rgba(2,77,110,0.12)}
+    main{padding:18px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .card-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+    .card{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 8px 16px rgba(2,10,20,0.6)}
+    .card .label{font-size:12px;color:var(--muted)}
+    .kpi{font-size:28px;font-weight:700}
+    .tabs{margin-top:14px}
+    .clauses-list{max-height:62vh;overflow:auto;padding:8px;border-radius:10px;background:var(--panel)}
+    .clause-compact{padding:10px;border-radius:8px;margin-bottom:8px;background:var(--glass);display:flex;justify-content:space-between;align-items:center}
+    .clause-compact .meta{color:var(--muted);font-size:13px}
+    .detail-card{background:var(--panel);padding:12px;border-radius:12px}
+    .btn-accent{background:linear-gradient(90deg,var(--accent),#0077b6);border:0;padding:8px 12px;border-radius:10px;color:#021024}
+    footer{padding:12px;text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
+    .chip{background:var(--glass-2);padding:6px 8px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .progress.small{height:8px;border-radius:8px}
+    .modal-backdrop{background:transparent}
+    @media(max-width:900px){.app{grid-template-columns:1fr}aside.sidebar{display:none}.clauses{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">DS</div>
+        <div>
+          <h3>Deepseek IMS</h3>
+          <div class="muted">IMS V4 • Hybrid (Quick + Detailed + NC)</div>
+        </div>
+      </div>
+
+      <nav class="nav" style="margin-top:18px">
+        <button id="navOverview" class="active" onclick="showSection('overview')"><i class="fas fa-chart-pie"></i> Overview</button>
+        <button id="navClauses" onclick="showSection('clauses')"><i class="fas fa-list"></i> Clauses</button>
+        <button id="navNC" onclick="showSection('nc')"><i class="fas fa-exclamation-triangle"></i> NC / CAPA</button>
+        <button id="navReports" onclick="showSection('reports')"><i class="fas fa-file-export"></i> Reports</button>
+        <button id="navSettings" onclick="showSection('settings')"><i class="fas fa-cog"></i> Settings</button>
+      </nav>
+
+      <div style="margin-top:20px;display:flex;gap:8px">
+        <button class="btn-accent" onclick="downloadJSON()"><i class="fas fa-file-code"></i> Export JSON</button>
+      </div>
+
+      <div style="margin-top:20px" class="muted small">Quick Actions</div>
+      <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn-accent" onclick="startQuickAudit()">Start Quick Audit</button>
+        <button class="btn-accent" onclick="startDetailedMode()">Open Detailed Mode</button>
+      </div>
+
+      <div style="margin-top:20px" class="muted small">User</div>
+      <div style="margin-top:8px"><span class="chip">Gokul (Admin)</span></div>
+
+    </aside>
+
+    <main>
+      <div class="topbar">
+        <div>
+          <h2>IMS V4 — Deepseek Hybrid System</h2>
+          <div class="muted">Quick Audit • Detailed Compliance • NC / CAPA</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <div class="muted">Mode: <span id="currentMode">Overview</span></div>
+          <button class="btn-accent" onclick="saveSnapshot()">Save</button>
+        </div>
+      </div>
+
+      <section id="overview" class="section">
+        <div class="card-row">
+          <div class="card"><div class="label">Total Clauses</div><div class="kpi" id="kpiTotal">0</div></div>
+          <div class="card"><div class="label">Compliant</div><div class="kpi" id="kpiCompliant">0</div></div>
+          <div class="card"><div class="label">Partial</div><div class="kpi" id="kpiPartial">0</div></div>
+          <div class="card"><div class="label">Non-Conforming</div><div class="kpi" id="kpiNon">0</div></div>
+        </div>
+
+        <div class="tabs">
+          <ul class="nav nav-tabs" id="overviewTabs" role="tablist">
+            <li class="nav-item"><a class="nav-link active" id="tabSummary" data-toggle="tab" href="#summaryTab">Executive</a></li>
+            <li class="nav-item"><a class="nav-link" id="tabCharts" data-toggle="tab" href="#chartsTab">Charts</a></li>
+            <li class="nav-item"><a class="nav-link" id="tabActions" data-toggle="tab" href="#actionsTab">Action Items</a></li>
+          </ul>
+          <div class="tab-content" style="margin-top:12px">
+            <div class="tab-pane fade show active" id="summaryTab">
+              <div class="detail-card">
+                <h5>Executive Summary</h5>
+                <div id="execSummary" class="muted">System initialized. Use the Clauses tab to run audits or enter evidence.</div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="chartsTab">
+              <div class="detail-card">
+                <canvas id="overviewChart" height="120"></canvas>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="actionsTab">
+              <div class="detail-card">
+                <div id="actionItems">No urgent actions.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="clauses" class="section" style="display:none">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="clauses-list" id="clausesContainer"></div>
+          </div>
+          <div class="col-md-5">
+            <div class="detail-card">
+              <ul class="nav nav-pills mb-3" id="clauseModeTabs">
+                <li class="nav-item"><a class="nav-link active" href="#quickTab" data-toggle="pill">Quick Audit</a></li>
+                <li class="nav-item"><a class="nav-link" href="#detailedTab" data-toggle="pill">Detailed</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ncTab" data-toggle="pill">NC / CAPA</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="quickTab">
+                  <h5>Quick Audit Mode</h5>
+                  <div class="muted">Tap a clause to toggle through statuses quickly.</div>
+                </div>
+                <div class="tab-pane fade" id="detailedTab">
+                  <h5>Detailed Clause View</h5>
+                  <div id="clauseDetailArea"></div>
+                </div>
+                <div class="tab-pane fade" id="ncTab">
+                  <h5>NC / CAPA</h5>
+                  <div id="ncArea"></div>
+                  <div style="margin-top:10px"><button class="btn-accent" onclick="openNCModal()">New NC</button></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="nc" class="section" style="display:none">
+        <div class="detail-card">
+          <h4>Non-Conformances & CAPA</h4>
+          <div id="ncList"></div>
+          <div style="margin-top:10px"><button class="btn-accent" onclick="openNCModal()">New NC</button></div>
+        </div>
+      </section>
+
+      <section id="reports" class="section" style="display:none">
+        <div class="detail-card">
+          <h4>Exports & Reports</h4>
+          <div style="display:flex;gap:8px;margin-top:12px">
+            <button class="btn-accent" onclick="downloadPDF()"><i class="fas fa-file-pdf"></i> PDF Report</button>
+            <button class="btn-accent" onclick="downloadJSON()"><i class="fas fa-file-code"></i> JSON</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="settings" class="section" style="display:none">
+        <div class="detail-card">
+          <h4>Settings</h4>
+          <div class="muted">Manage theme, user roles, and clause dataset.</div>
+        </div>
+      </section>
+
+      <footer>Developed by Gokul T.B. — IMS V4</footer>
+    </main>
+  </div>
+
+  <!-- NC Modal -->
+  <div class="modal fade" id="ncModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background:#062233;color:#e6eef6">
+        <div class="modal-header"><h5 class="modal-title">New Non-Conformance</h5><button type="button" class="close text-light" data-dismiss="modal">&times;</button></div>
+        <div class="modal-body">
+          <input id="ncTitle" class="form-control" placeholder="Title" />
+          <input id="ncRef" class="form-control mt-2" placeholder="Clause Ref (e.g. 8.2)" />
+          <textarea id="ncDesc" class="form-control mt-2" rows="4" placeholder="Description"></textarea>
+        </div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-dismiss="modal">Cancel</button><button class="btn btn-primary" onclick="saveNC()">Create NC</button></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    // --- Clause dataset (merged, concise) ---
+    // Load ISO 9001 clauses dynamically from external JSON (Option B fields only)
+let CLAUSES = [];
+async function loadClauses() {
+  try {
+    const res = await fetch('9001.json');
+    const data = await res.json();
+    // Map JSON → V4 structure (Option B)
+    CLAUSES = data.map(c => ({
+      id: c.clause,
+      title: c.title,
+      desc: c.summary,
+      requirements: c.requirements || [],
+      evidence: c.evidence_examples || []
+    }));
+  } catch(e) {
+    console.error('Failed to load clauses:', e);
+  }
+}
+
+    // App state
+    let state = { compliance: {}, details: {}, ncs: [] };
+    let overviewChart;
+
+    function init(){
+      // init state from storage or default
+      const saved = localStorage.getItem('ims_v4_state');
+      if(saved) state = JSON.parse(saved);
+      else {
+        CLAUSES.forEach(c=>{ state.compliance[c.id]='notSet'; state.details[c.id] = {review_frequency:'',last_review:'',next_review:'',responsibility:'',evidence:'',implementation:''}; });
+      }
+      document.getElementById('kpiTotal').textContent = CLAUSES.length;
+      renderOverview(); renderClausesList(); updateKPIs(); renderNCs();
+    }
+
+    function saveState(){ localStorage.setItem('ims_v4_state', JSON.stringify(state)); }
+
+    // Navigation
+    function showSection(id){ ['overview','clauses','nc','reports','settings'].forEach(s=>{const el=document.getElementById(s); if(el) el.style.display = (s===id)?'block':'none'; document.getElementById('currentMode').textContent = id.charAt(0).toUpperCase()+id.slice(1); document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active')); const btn=document.getElementById('nav'+capitalize(id)); if(btn) btn.classList.add('active'); }); }
+    function capitalize(s){return s.charAt(0).toUpperCase()+s.slice(1)}
+
+    // Overview
+    function renderOverview(){ document.getElementById('execSummary').textContent = 'IMS V4 — Hybrid dashboard initialized. Use Clauses tab to run audits.'; renderOverviewChart(); updateActionItems(); }
+
+    function renderOverviewChart(){ const ctx = document.getElementById('overviewChart').getContext('2d'); const counts = {compliant:0,partial:0,non:0,notSet:0}; CLAUSES.forEach(c=>{const s=state.compliance[c.id]; if(s==='compliant')counts.compliant++; else if(s==='partial')counts.partial++; else if(s==='non')counts.non++; else counts.notSet++;}); const data = [counts.compliant, counts.partial, counts.non, counts.notSet]; if(overviewChart) overviewChart.destroy(); overviewChart = new Chart(ctx,{type:'doughnut',data:{labels:['Compliant','Partial','Non-Conforming','Not Set'],datasets:[{data,dataBackgroundColor:['#27ae60','#f39c12','#e74c3c','#95a5a6']}]},options:{plugins:{legend:{position:'bottom'}}}});
+    }
+
+    // Clauses list rendering (compact)
+    function renderClausesList(){ const container = document.getElementById('clausesContainer'); container.innerHTML=''; CLAUSES.forEach(c=>{ const div = document.createElement('div'); div.className='clause-compact'; div.id='clause-'+c.id; div.innerHTML = `<div><strong>${c.id} — ${c.title}</strong><div class="meta">${c.section} • ${c.desc}</div></div><div style="display:flex;gap:8px;align-items:center"><div class="chip" id="status-${c.id}">${state.compliance[c.id]||'notSet'}</div><div><button class="btn btn-sm btn-light" onclick="toggleStatus('${c.id}')">Toggle</button></div><div><button class="btn btn-sm btn-outline-light" onclick="openDetailed('${c.id}')">Open</button></div></div>`; container.appendChild(div); updateCompactVisual(c.id); }); }
+
+    function updateCompactVisual(id){ const el = document.getElementById('status-'+id); const s = state.compliance[id]; el.textContent = s; el.style.background = s==='compliant' ? '#0b3' : s==='partial' ? '#ffb74d' : s==='non' ? '#ff6b6b' : 'transparent'; el.style.color = s==='notSet' ? 'var(--muted)' : '#021024'; el.style.padding='6px 8px'; el.style.borderRadius='8px'; }
+
+    // Toggle quick status: cycles notSet -> compliant -> partial -> non -> notSet
+    function toggleStatus(id){ const order = ['notSet','compliant','partial','non']; const cur = state.compliance[id]||'notSet'; const next = order[(order.indexOf(cur)+1)%order.length]; state.compliance[id]=next; saveState(); updateCompactVisual(id); updateKPIs(); renderOverviewChart(); }
+
+    // Open detailed panel
+    function openDetailed(id){ showSection('clauses'); // switch to detailed tab
+      $('.nav-pills a[href="#detailedTab"]').tab('show'); renderClauseDetail(id);
+    }
+
+    function renderClauseDetail(id){ const c = CLAUSES.find(x=>x.id===id); const d = state.details[id]||{}; const area = document.getElementById('clauseDetailArea'); area.innerHTML = `
+      <h5>${c.id} — ${c.title}</h5>
+      <p class="muted">${c.section} — ${c.desc}</p>
+      <div class="form-group"><label>Review frequency</label><select class="form-control" id="freq-${id}" onchange="saveDetail('${id}','review_frequency',this.value)"><option value="">Select</option><option value="Monthly" ${d.review_frequency==='Monthly'?'selected':''}>Monthly</option><option value="Quarterly" ${d.review_frequency==='Quarterly'?'selected':''}>Quarterly</option><option value="Yearly" ${d.review_frequency==='Yearly'?'selected':''}>Yearly</option></select></div>
+      <div class="form-row">
+        <div class="form-group col"><label>Last review</label><input type="date" id="last-${id}" class="form-control" value="${d.last_review||''}" onchange="saveDetail('${id}','last_review',this.value)"/></div>
+        <div class="form-group col"><label>Next review</label><input type="date" id="next-${id}" class="form-control" value="${d.next_review||''}" onchange="saveDetail('${id}','next_review',this.value)"/></div>
+      </div>
+      <div class="form-group"><label>Responsibility</label><input class="form-control" id="resp-${id}" value="${d.responsibility||''}" oninput="saveDetail('${id}','responsibility',this.value)"/></div>
+      <div class="form-group"><label>Evidence (link/path)</label><input class="form-control" id="evid-${id}" value="${d.evidence||''}" oninput="saveDetail('${id}','evidence',this.value)"/></div>
+      <div class="form-group"><label>Implementation</label><select class="form-control" id="impl-${id}" onchange="saveDetail('${id}','implementation',this.value)"><option value="">Select</option><option value="Fully Implemented" ${d.implementation==='Fully Implemented'?'selected':''}>Fully Implemented</option><option value="Partially Implemented" ${d.implementation==='Partially Implemented'?'selected':''}>Partially Implemented</option><option value="Planned" ${d.implementation==='Planned'?'selected':''}>Planned</option></select></div>
+      <div style="display:flex;gap:8px"><button class="btn-accent" onclick="setCompliance('${id}','compliant')">Mark Compliant</button><button class="btn btn-warning" onclick="setCompliance('${id}','partial')">Partial</button><button class="btn btn-danger" onclick="setCompliance('${id}','non')">Non-Conforming</button></div>
+    `; }
+
+    function saveDetail(id,field,value){ state.details[id] = state.details[id]||{}; state.details[id][field]=value; saveState(); updateActionItems(); }
+
+    function setCompliance(id,status){ state.compliance[id]= status; saveState(); updateCompactVisual(id); updateKPIs(); renderOverviewChart(); updateActionItems(); }
+
+    // KPIs
+    function updateKPIs(){ let comp=0,part=0,non=0; CLAUSES.forEach(c=>{const s=state.compliance[c.id]; if(s==='compliant') comp++; else if(s==='partial') part++; else if(s==='non') non++;}); document.getElementById('kpiCompliant').textContent = comp; document.getElementById('kpiPartial').textContent = part; document.getElementById('kpiNon').textContent = non; }
+
+    // Actions
+    function updateActionItems(){ const container = document.getElementById('actionItems'); container.innerHTML=''; const today = new Date(); let any=false; CLAUSES.forEach(c=>{ const d = state.details[c.id]||{}; if(d.next_review){ const due = new Date(d.next_review); const diff = Math.ceil((due - today)/(1000*60*60*24)); if(diff<=30 || state.compliance[c.id]==='non'){ any=true; const urgency = diff<=7 ? 'danger' : diff<=30 ? 'warning' : 'info'; const el = document.createElement('div'); el.className = 'alert alert-'+(urgency==='danger'?'danger':urgency==='warning'?'warning':'info'); el.innerHTML = `<div><strong>${c.title}</strong><br><small>Due: ${d.next_review} (${diff} days)</small>${state.compliance[c.id]==='non'?'<br><small class="text-danger"><strong>NON-CONFORMING</strong></small>':''}</div>`; container.appendChild(el); } } }); if(!any) container.innerHTML='<div class="alert alert-success">No urgent actions.</div>'; }
+
+    // NC / CAPA
+    function openNCModal(){ $('#ncModal').modal('show'); }
+    function saveNC(){ const t=document.getElementById('ncTitle').value; const r=document.getElementById('ncRef').value; const d=document.getElementById('ncDesc').value; if(!t||!r){alert('Provide title and clause ref');return;} const id='NC-'+(state.ncs.length+1); state.ncs.push({id,title:t,ref:r,desc:d,created:new Date().toISOString(),status:'open'}); saveState(); renderNCs(); $('#ncModal').modal('hide'); document.getElementById('ncTitle').value=''; document.getElementById('ncRef').value=''; document.getElementById('ncDesc').value=''; }
+    function renderNCs(){ const list=document.getElementById('ncList'); list.innerHTML=''; if(state.ncs.length===0) list.innerHTML='<div class="muted">No NCs raised.</div>'; state.ncs.forEach(n=>{ const div = document.createElement('div'); div.className='card mb-2'; div.style.background='var(--card)'; div.innerHTML = `<div class="card-body"><strong>${n.id}</strong> <div class="muted">${n.title} — Clause ${n.ref}</div><p>${n.desc}</p><div><small class="muted">Status: ${n.status}</small> <button class="btn btn-sm btn-outline-light" onclick="closeNC('${n.id}')">Close</button></div></div>`; list.appendChild(div); }); }
+    function closeNC(id){ const idx = state.ncs.findIndex(x=>x.id===id); if(idx>-1){ state.ncs[idx].status='closed'; saveState(); renderNCs(); } }
+
+    // Exports
+    function downloadJSON(){ const data = {meta:{exportedAt:new Date().toISOString(),standard:'ISO-9001-like'},clauses:CLAUSES,state}; const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='ims_v4_export_'+Date.now()+'.json'; a.click(); }
+
+    async function downloadPDF(){ const { jsPDF } = window.jspdf; const doc = new jsPDF(); doc.setFontSize(16); doc.text('IMS V4 — Compliance Summary',14,20); let y=30; CLAUSES.forEach(c=>{ const s = state.compliance[c.id]||'notSet'; doc.setFontSize(10); doc.text(`${c.id} ${c.title} — ${s}`,14,y); y+=6; if(y>270){ doc.addPage(); y=20; } }); doc.save('ims_v4_report_'+new Date().toISOString().split('T')[0]+'.pdf'); }
+
+    function saveSnapshot(){ saveState(); alert('Snapshot saved to localStorage'); }
+
+    function renderNCs(){ const list=document.getElementById('ncList'); list.innerHTML=''; if(state.ncs.length===0) list.innerHTML='<div class="muted">No NCs raised.</div>'; state.ncs.forEach(n=>{ const div = document.createElement('div'); div.className='card mb-2'; div.style.background='var(--card)'; div.innerHTML = `<div class="card-body"><strong>${n.id}</strong> <div class="muted">${n.title} — Clause ${n.ref}</div><p>${n.desc}</p><div><small class="muted">Status: ${n.status}</small> <button class="btn btn-sm btn-outline-light" onclick="closeNC('${n.id}')">Close</button></div></div>`; list.appendChild(div); }); }
+
+    // Helpers
+    function startQuickAudit(){ showSection('clauses'); $('.nav-pills a[href="#quickTab"]').tab('show'); }
+    function startDetailedMode(){ showSection('clauses'); $('.nav-pills a[href="#detailedTab"]').tab('show'); }
+
+    // initialize
+    window.addEventListener('load', async () => {
+  await loadClauses();
+  init();
+});
+  </script>
+</body>
+</html>
